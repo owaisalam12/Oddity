@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="10dp"
+android:fillViewport="true"
+tools:context=".Fragments.PrivacyPolicyFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:text="1. Introduction" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="The following statements explain the general terms of Young Enterprise regarding the collection and processing of your personal data by Oddity. It is committed to the protection of your personal data and compliance of all applicable personal data protection laws and regulations in Pakistan." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="2. Your Consent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="By providing your personal data to Oddity, you have read and accepted the statements herein; and you have consented to the processing of your personal data by Oddity in the manner set out herein. If you provide personal data of third parties to Oddity, you warrant and represent to Oddity that you have obtained the required consent of the third parties for the processing of the relevant personal data by Oddity in the manner set out herein." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="3. Notice and Choice Principle Statement" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="\u2022 Collected Information" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="We only collect the information that needed for the registration procedure at our website or when fill up the registration form on the site. The information that we gathered are voluntarily submitted by the customers to us. We collect customer’s personal information during the account registration on our site."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="\u2022 Personal Identification Details" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Your personal identification details are used to process your order of the products, customize your profile information, internal usage with legal requirements, update your status of online shopping in our site and also to update our customers with our latest news of updates/changes, promotions and events."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="\u2022 Confidentiality" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Your personal information such as credit cards details, bank account numbers are well kept secret and confidential with us. We will never share any of your personal details to any third party. Our sites do apply appropriate security application in order to keep all the customers information safe at all time."
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="4. Changes to our Privacy Policy"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="This statement may be revised and updated from time to time. Oddity recommends that you visit this webpage to review the most updated version of this statement each time you provide your personal data to Oddity."
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="5. Security"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+android:text="Oddity website do applies appropriate security application in order to prevent the leaking customers’ personal identification details to third parties, illegal disclosure and hackers. However bear in mind that any information transmitted through Internet is NOT 100% guaranteed safe and secure."
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="6. Contact Us"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="If you have any questions about this statement, you may contact Oddity at:-"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="Oddity.pk"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Karachi, Pakistan."
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Email: support@oddity.pk"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Telephone: 021-36360733"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Phone: 0334-2726048"
+        />
+</LinearLayout>
+</ScrollView>

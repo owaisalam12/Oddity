@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="true"
+    tools:context=".Fragments.AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:text="About Us" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="ODDITY promises its customers to bring unique products and help them buying what they see on internet." />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="15dp"
+        android:text="What We Do" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:text="Our team is always working hard to bring you the best deals and deepest discounts, being sure to offer you the best and most exciting products available. We believe your shopping experience should be easy and fun. That’s why we developed ODDITY as an online store specializing in high quality products that are also budget-friendly, helping to make your shopping experience as fun and rewarding as possible." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="We are associate with" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/associate"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Shipping Partners" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shipping_partners"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+           />
+
+    </LinearLayout>
+</ScrollView>

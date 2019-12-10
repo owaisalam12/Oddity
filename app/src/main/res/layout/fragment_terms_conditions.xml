@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="true"
+    tools:context=".Fragments.PrivacyPolicyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Welcome to Oddity online store. Terms and conditions stated below apply to all visitors and users of Oddity.pk. You’re bound by these terms and conditions as long as you’re on  www.oddity.pk. "
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="General" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="The content of terms and conditions may be change, move or delete at any time. Please note that Oddity have the rights to change the contents of the terms and conditions without any notice. Any violation of rules and regulations of these terms and conditions, Oddity will take immediate actions against the offender(s)."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Site Contents &amp; Copyrights" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Unless otherwise noted, all materials, including images, illustrations, designs, icons, photographs, video clips, and written and other materials that appear as part of this Site, in other words “Contents of the Site” are copyrights, trademarks, trade dress and/or other intellectual properties owned, controlled or licensed by Oddity ."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Comments and Feedback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="All comments and feedback to www.oddity.pk will be remain Oddity ‘s property."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="User shall agree that there will be no comment(s) submitted to the www.oddity.pk will violate any rights of any third party, including copyrights, trademarks, privacy of other personal or proprietary right(s). Furthermore, the user shall agree there will not be content of unlawful, abusive, or obscene material(s) submitted to the site. User will be the only one responsible for any comment’s content made."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Product Information" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="We cannot guarantee all actual products will be exactly the same shown on the monitor as that is depending on the user monitor. Different device yield different screen resolution."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Newsletter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="User shall agree that Oddity may send newsletter regarding the latest news/products/promotions etc through email to the user."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Indemnification" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="The user shall agree to defend, indemnify and hold Oddity harmless from and against any and all claims, damages, costs and expenses, including attorneys’ fees, arising from or related to your use of the Site."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Link to other sites" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="Any access link to third party sites is at your own risk. Oddity will not be related or involve to any such website if the user’s content/product(s) got damaged or loss have any connection with third party site."
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Inaccuracy Information" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="From time to time, there may be information on www.oddity.pk that contains typographical error, inaccuracies, omissions, that may relate to product description, pricing, availability and article contents. We reserve the rights to correct any errors, inaccuracies, change or edit information without prior notice to the customers. If you are not satisfy with your purchased product(s), please return it back to us with the invoice. Please check out “Return and Refund Policy”."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Termination" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="This agreement is effective unless and until either by the customer or www.oddity.pk. Customer may terminate this agreement at any time. However, we may also terminate the agreement with the customer without any prior notice and will be denying the access of the customer who is unable to comply the terms and conditions above."
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="15dp"
+            android:text="Resolution Discrepency" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:text="The entire cabinet wardrobe shown in the picture is taken from the real product. All the display items such as toys, shirts, books etc are strictly for photograph taking purpose and hence are intended for sale nor included in our sale offer."
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeDecorFragment">
+    <RelativeLayout
+        android:id="@+id/layout_womenFashion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_womenFashion"
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/progressbar_womenFashion"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_womenFashion"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmerlayout2"/>
+
+            <include layout="@layout/shimmerlayout2"/>
+
+            <include layout="@layout/shimmerlayout2"/>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loadingIndicator_womenFashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        android:visibility="gone"
+        app:indicatorColor="@color/colorPrimaryDark"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar_womenFashion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+    <include
+        android:id="@+id/layout_noconnection_womenFashion"
+        layout="@layout/noconnection_message_layout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_oddityDeals"
+            android:icon="@drawable/ic_odditydeals"
+            android:title="Oddity Deals" />
+
+        <item
+            android:id="@+id/nav_homeLiving"
+            android:icon="@drawable/ic_homeliving"
+            android:title="Home &amp; Living" />
+        <item
+            android:id="@+id/nav_homeDecor"
+            android:icon="@drawable/ic_homedecorations"
+            android:title="Home Decoration" />
+        <item
+            android:id="@+id/nav_menFashion"
+            android:icon="@drawable/ic_menfashion"
+            android:title="Men Fashion" />
+
+        <item
+            android:id="@+id/nav_womenFashion"
+            android:icon="@drawable/ic_womenfashion"
+            android:title="Women Fashion" />
+
+    </group>
+
+    <item android:title="My Profile">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/my_orders"-->
+                <!--android:icon="@drawable/ic_android_black_24dp"-->
+                <!--android:title="My Orders" />-->
+            <item
+                android:id="@+id/my_cart"
+                android:icon="@drawable/ic_shopping_cart_black_24dp"
+                android:title="My Cart" />
+            <!--<item-->
+                <!--android:id="@+id/my_account"-->
+                <!--android:icon="@drawable/ic_android_black_24dp"-->
+                <!--android:title="My Account" />-->
+        </menu>
+    </item>
+
+    <item android:title="Company Info">
+        <menu>
+            <item
+                android:id="@+id/about_us"
+                android:title="About Us" />
+            <item
+                android:id="@+id/privacy_policy"
+                android:title="Privacy Policy" />
+            <item
+                android:id="@+id/terms_conditions"
+                android:title="Terms &amp; Conditions" />
+
+        </menu>
+    </item>
+
+    <item android:title="Oddity Support Panel">
+        <menu>
+            <item
+                android:id="@+id/delivery_policy"
+                android:title="Delivery Policy" />
+            <item
+                android:id="@+id/returnrefund_policy"
+                android:title="Return/Refund Policy" />
+            <item
+                android:id="@+id/payments_method"
+                android:title="Payments Method" />
+
+
+
+        </menu>
+    </item>
+
+</menu>

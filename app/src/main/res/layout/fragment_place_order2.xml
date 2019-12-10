@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Your order"
+            android:layout_gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gray"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Product"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/gray"
+                android:id="@+id/profileNameText2"
+                />
+
+            <TextView
+                android:id="@+id/profileName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/profileNameText2"
+                android:layout_alignBottom="@+id/profileNameText2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="18dp"
+                android:textSize="20dp"
+                android:text="Total"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/rider_tip_div"
+            >
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_shoppingCart"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/sub_total_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Subtotal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/gray"
+                android:id="@+id/profileNameText234"
+                />
+
+
+            <TextView
+                android:id="@+id/orderItemSubTotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/tax_div4"
+            android:layout_below="@+id/toolbar_sign_in"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Shipping"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/gray"
+                android:id="@+id/profileNameText234f"
+                />
+
+
+            <TextView
+                android:id="@+id/placeResumeVat10Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dp"
+                android:text="Free shipping"
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/gray"
+                android:textSize="17dp" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/tax_div"
+            android:layout_below="@+id/toolbar_sign_in"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Total"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/gray"
+                android:id="@+id/profileNameText2346"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="17dp"
+                android:paddingRight="15dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/orderItemTotalPriceText"
+                android:textColor="@color/gray"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/divider"/>
+
+
+        <RadioGroup
+            android:id="@+id/orderItem_radioGrPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/orderItem_radioBtBank"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/orderItem_radioBtBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direct Bank Transfer" />
+            <TextView
+                android:id="@+id/orderItem_radioBtTextBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="visible"
+                android:text="Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account."
+                android:textColor="@color/colorPrimary"
+                />
+            <RadioButton
+                android:id="@+id/orderItem_radioBtCoD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash on delivery " />
+            <TextView
+                android:id="@+id/orderItem_radioBtTextCoD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="Pay with cash upon delivery."
+                android:textColor="@color/colorPrimary"
+                />
+        </RadioGroup>
+        <CheckBox
+            android:id="@+id/orderItem_termsCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="I have read and agree to the terms and conditions*" />
+
+        <Button
+            android:id="@+id/orderItemPlaceOrderButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button_fill"
+            android:text="Place Order"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

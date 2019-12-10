@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ecommerce13background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                app:cardCornerRadius="2dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSliderShopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderCircularHandlerEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="2"
+                    app:sliderStartAutoCycle="true" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:animateLayoutChanges="true"
+                        android:background="@color/ecommerce11DescriptionBg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                            <TextView
+                                android:id="@+id/shopping_title"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="8dp"
+                                android:paddingTop="8dp"
+                                android:text="Sky Blue Dress"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:paddingLeft="8dp"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/shopping_price"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="wrap_content"
+                                android:paddingEnd="0dp"
+                                android:text="$255"
+                                android:gravity="center"
+                                android:background="@color/colorPrimary"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                android:paddingRight="0dp" />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/shopping_category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/linearLayout"
+                                android:paddingBottom="8dp"
+                                android:paddingStart="8dp"
+                                android:text="Women, Dress, Summer"
+                                android:textColor="@color/ecommerce13fontGray"
+                                android:textSize="12sp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingLeft="8dp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/ecommerce11SplitterGray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="16dp"
+                                android:text="Quantity"
+                                android:textAllCaps="true"
+                                android:textStyle="bold"
+                                android:paddingStart="8dp"
+                                android:paddingLeft="8dp"
+                                android:textColor="@color/ecommerce13fontTitle"/>
+
+                            <Button
+                                android:id="@+id/decrementQuantity"
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:backgroundTint="#f4f6f6"
+                                android:text="-"
+                                android:onClick="onClick"
+                                />
+                            <EditText
+                                android:id="@+id/quantityText"
+                                android:layout_width="40dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:inputType="number"
+                                android:focusable="false"
+                                android:text="1"
+                                />
+
+                            <Button
+                                android:id="@+id/incrementQuantity"
+                                android:layout_width="48dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@android:color/black"
+                                android:backgroundTint="#f4f6f6"
+                                android:text="+"
+                                android:onClick="onClick"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/ecommerce11SplitterGray" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/descriptionTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="0dp"
+                                android:paddingStart="8dp"
+                                android:paddingLeft="8dp"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="4dp"
+                                android:text="DESCRIPTION"
+                                android:textColor="@color/ecommerce13fontTitle"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/shopping_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingStart="8dp"
+                            android:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book." />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/shopping_btnBuyNow"
+            style="@style/ButtonWhite"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Buy Now"
+            android:layout_marginRight="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/shopping_btnAddToChart"
+            style="@style/ButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            tools:ignore="RtlCompat">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:drawableLeft="@drawable/ic_shopping_cart_white"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

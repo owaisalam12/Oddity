@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_shoppingcart" android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            fresco:placeholderImage="@color/stay_color"/>
+        <LinearLayout  android:id="@+id/layout_item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="16dp">
+            <TextView
+                android:id="@+id/title_shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Denim Shirt"
+                android:textSize="14dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slim fit, cotton"
+                android:visibility="gone"
+                android:textSize="10dp"/>
+            <TextView
+                android:id="@+id/price_shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 8,999"
+                android:textSize="12dp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="3dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery charge: FREE"
+                android:textSize="10dp"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty: "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:id="@+id/quantity_shoppingcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <LinearLayout android:id="@+id/layout_removeItem_shoppingcart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear_black_18dp"/>
+            <TextView android:id="@+id/removeItem_shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="Remove"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:gravity="left"/>
+        </LinearLayout>
+
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_light"/>
+
+        <LinearLayout android:id="@+id/layout_editItem_shoppingcart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_black_18dp"
+                />
+            <TextView android:id="@+id/editItem_shoppingcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="Edit"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:gravity="left"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>
+
